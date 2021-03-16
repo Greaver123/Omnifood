@@ -5,6 +5,7 @@
 :root {
   --orange: #e67e22;
   --orange-dark: #cf6d17;
+  --gray: #555;
 }
 
 * {
@@ -15,7 +16,7 @@
 
 html {
   background-color: #fff;
-  color: #555;
+  color: var(--gray);
   font-family: "Lato", "Arial", sans-serif;
   font-weight: 300;
   font-size: 20px;
@@ -110,6 +111,22 @@ ion-icon {
   color: var(--orange);
   margin-bottom: 10px;
 }
+
+/* ---- Links ---- */
+
+a:link,a:visited{
+  color:var(--orange);
+  text-decoration: none;
+  border-bottom: 1px solid var(--orange);
+  padding-bottom: 1px;
+  transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,a:active{
+  color:var(--gray);
+  border-bottom: transparent;
+}
+
 /* ---- Buttons ---- */
 
 .btn:link,
@@ -298,13 +315,33 @@ header {
   margin-right: 10px;
 }
 
+.btn-app:link, .btn-app:visited{
+  border:0px;
+}
+
 /* -------------------------------------------------- */
 /*  Cities */
 /* -------------------------------------------------- */
 
-.city-feature ion-icon {
+.icon-small {
   font-size: 100%;
   margin: 0;
   display: inline-block;
-  color: initial;
+  color: var(--orange);
+  width: 30px;
+  text-align: center;
+  font-size: 120% !important;
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top:-5px;
+  margin-right: 10px;
+}
+
+.box img{
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.city-feature{
+  margin-bottom: 5px;
 }
