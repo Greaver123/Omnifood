@@ -238,6 +238,47 @@ header {
 }
 
 /* -------------------------------------------------- */
+/* Sticky nav */
+/* -------------------------------------------------- */
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(255, 249, 249, 1);
+  color: black;
+  box-shadow: 0px 1px 3px rgb(196, 196, 196);
+}
+
+.sticky .main-nav {
+  display: inline-block;
+  margin-top: 0;
+  text-align: center;
+  transform: translateY(50%);
+}
+
+.sticky .main-nav a {
+  color: black !important;
+}
+
+.sticky .logo {
+  margin-top: 0;
+  height: 50px;
+}
+
+.sticky-fade-in {
+  top: -50px;
+  transition: transform 0.5s;
+  transform: translateY(50px);
+}
+
+.sticky-fade-out {
+  top: -50px;
+  transition: transform 0.5s;
+  transform: translateY(-50px);
+}
+
+/* -------------------------------------------------- */
 /* Features */
 /* -------------------------------------------------- */
 .section-features .long-copy {
