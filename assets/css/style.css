@@ -643,3 +643,24 @@ footer p {
   font: 90%;
   margin-top: 30px;
 }
+
+/* -------------------------------------------------- */
+/*  animations */
+/* -------------------------------------------------- */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+  opacity: 0;
+  animation-duration: 1s;
+}
+
+.js--wp-4 {
+  animation-duration: 1s;
+}
+
+.js--wp-1.animate__animated,
+.js--wp-2.animate__animated,
+.js--wp-3.animate__animated {
+  opacity: 1;
+}
