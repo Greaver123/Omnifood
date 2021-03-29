@@ -117,3 +117,17 @@ $(".js--wp-4").waypoint(
   },
   { offset: "50%" }
 );
+
+//mobile nav
+$(".js--nav-icon").click(function () {
+  var nav = $(".js--main-nav");
+  var icon = $(".js--nav-icon ion-icon");
+
+  if (icon.attr("name") === "close") {
+    icon.attr("name", "reorder-three-outline");
+  } else {
+    icon.attr("name", "close");
+  }
+
+  nav.slideToggle(200);
+});
