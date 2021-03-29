@@ -59,9 +59,32 @@ $(".js--section-features").waypoint(
   }
 );
 
-// var waypoint = new Waypoint({
-//   element: document.getElementById("basic-waypoint"),
-//   handler: function () {
-//     notify("Basic waypoint triggered");
-//   },
-// });
+$(".js--scroll-to-plans").click(function (e) {
+  $("html, body").animate(
+    { scrollTop: $(".js--section-plans").offset().top },
+    1000
+  );
+});
+
+$(".js--scroll-to-start").click(function (e) {
+  $("html, body").animate(
+    { scrollTop: $(".js--section-features").offset().top },
+    1000
+  );
+});
+
+window.addEventListener("hashchange", function (e) {
+  if (!location.hash) return;
+  const section = location.hash.slice(1);
+  document.querySelector(`.section-${section}`).scrollIntoView({
+    behavior: "smooth",
+  });
+});
+
+document.addEventListener("DOMContentLoaded", (event) => {
+  if (!location.hash) return;
+  const section = location.hash.slice(1);
+  document.querySelector(`.section-${section}`).scrollIntoView({
+    behavior: "smooth",
+  });
+});
