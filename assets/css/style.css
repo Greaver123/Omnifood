@@ -329,6 +329,10 @@ header {
   display: block;
 }
 
+.sticky .logo {
+  display: none;
+}
+
 .main-nav {
   margin-top: 18px;
 }
