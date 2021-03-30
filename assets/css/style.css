@@ -188,7 +188,7 @@ input[type="submit"]:active {
 /* -------------------------------------------------- */
 
 header {
-  background-image: var(--image-darker-gradient), url("../images/hero.jpg");
+  background-image: var(--image-darker-gradient), url("../images/hero-min.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -467,7 +467,7 @@ header {
 
 .section-testimonials {
   background-image: var(--image-darker-gradient),
-    url("/assets/images//back-customers.jpg");
+    url("/assets/images//back-customers-min.jpg");
   background-position: center;
   background-size: cover;
   color: #fff;
